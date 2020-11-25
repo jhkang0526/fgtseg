@@ -127,9 +127,10 @@ def show_slice(imgls, slice):
     for idx, img in enumerate(imgls):
         plt.subplot(1, cnt, idx+1)
         if img['name'] =='original':
-            plt.imshow(np.rot90(img['img'][:, :, slice]), 'gray')
+            plt.imshow(np.rot90(img['img'][:, :, slice]), cmap = 'gray')
         else:
-            plt.imshow(np.rot90(img['img'][:, :, slice]))
+            plt.imshow(np.rot90(img['img'][:, :, slice]), cmap = 'gray')
+            
         plt.title(img['name'])
         plt.axis('off')
     
