@@ -11,7 +11,6 @@ import torch
 import random
 import matplotlib.pyplot as plt
 from torch.utils.data import Dataset
-import torchio as tio
 
 from nilearn.image import resample_img
 
