@@ -6,7 +6,6 @@ import math
 import torch
 import csv
 
-import torchio as tio
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
 

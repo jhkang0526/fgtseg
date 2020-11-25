@@ -18,4 +18,3 @@ This repository provides the trained CNN model and the [inference code](FGTSeg_t
 
 ## Required Packages
 - nilearn: for nifti format load/save
-- torchio: 
