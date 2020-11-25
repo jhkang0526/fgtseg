@@ -136,7 +136,7 @@ def show_slice(imgls, slice):
     
     plt.show()
 
-def save_nii(imarr, affine, pth, name):
+def save_nii(imarr, affine, pth, name):ㄴ
     nii_img = nib.Nifti1Image(imarr, affine = affine)          
     nib.save(nii_img, os.path.join(pth,name))
     
@@ -148,7 +148,7 @@ def cal_vol(nparray, num_cls, affine):
         pred = (nparray == c).astype('float')
         vol_ls.append(pred.sum()*voxel)
         
-    print('Breast_vol: ', vol_ls[0],'mm', '/ FGT_vol:', vol_ls[1], 'mm')   
+    print('Breast_vol: ', vol_ls[0],'mm^3', '/ FGT_vol:', vol_ls[1], 'mm^3')   
         
     return vol_ls
 
